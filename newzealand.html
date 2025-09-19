@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>New Zealand Universities</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/475000/475020-New-Zealand.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    h1 {
+      padding: 30px 20px 10px 20px;
+      font-size: 2.5em;
+      text-shadow: 2px 2px 6px black;
+    }
+
+    .university-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      max-width: 1200px;
+      margin: 50px auto 0 auto; /* moved up by adjusting top margin */
+      padding: 0 20px;
+    }
+
+    .university-list a {
+      display: block;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.7);
+      color: white;
+      text-decoration: none;
+      font-size: 1.1em;
+      border-radius: 8px;
+      transition: transform 0.3s, background 0.3s;
+    }
+
+    .university-list a:hover {
+      transform: scale(1.05);
+      background: rgba(0, 0, 0, 0.9);
+    }
+
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 20px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 6px;
+      font-size: 1em;
+      transition: background 0.3s;
+    }
+
+    .back-home:hover {
+      background: darkred;
+    }
+
+    @media (max-width: 900px) {
+      .university-list {
+        grid-template-columns: repeat(2, 1fr); /* responsive for tablets */
+      }
+    }
+
+    @media (max-width: 600px) {
+      .university-list {
+        grid-template-columns: 1fr; /* single column on mobile */
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>New Zealand Universities</h1>
+  
+  <div class="university-list">
+    <a href="https://www.aut.ac.nz/" target="_blank">Auckland University of Technology (AUT)</a>
+    <a href="https://www.lincoln.ac.nz/" target="_blank">Lincoln University</a>
+    <a href="https://www.massey.ac.nz/" target="_blank">Massey University</a>
+    <a href="https://www.auckland.ac.nz/" target="_blank">University of Auckland</a>
+    <a href="https://www.canterbury.ac.nz/" target="_blank">University of Canterbury</a>
+    <a href="https://www.otago.ac.nz/" target="_blank">University of Otago</a>
+    <a href="https://www.waikato.ac.nz/" target="_blank">University of Waikato</a>
+    <a href="https://www.wgtn.ac.nz/" target="_blank">Victoria University of Wellington</a>
+  </div>
+
+  <a href="index.html" class="back-home">⬅ Back to Home</a>
+</body>
+</html>

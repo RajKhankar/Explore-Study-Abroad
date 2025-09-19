@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>University Finder - Home</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Roboto', sans-serif;
+      min-height: 100vh;
+      background: url('https://edunirvana.in/wp-content/uploads/2025/06/2206.q703.008.S.m004.c12.global-education-student-exchange-cartoon-scaled.jpg') no-repeat center center fixed;
+      background-size: cover;
+      overflow-x: hidden;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    h1 {
+      font-size: 4rem;
+      color: #fff;
+      text-align: center;
+      margin: 40px 0 20px 0; /* stays at top */
+      animation: fadeInDown 1s ease forwards;
+      letter-spacing: 1px;
+      text-shadow: 2px 2px 8px rgba(0,0,0,0.6);
+      background: rgba(0,0,0,0.65);
+      padding: 10px 25px;
+      border-radius: 12px;
+      display: inline-block;
+    }
+
+    @keyframes fadeInDown {
+      0% { opacity: 0; transform: translateY(-40px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .country-wrapper {
+      flex: 1; /* pushes to vertical center */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      width: 100%;
+    }
+
+    .country-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 40px;
+      max-width: 1200px;
+    }
+
+    .country-card {
+      text-align: center;
+      cursor: pointer;
+      animation: fadeInUp 1s ease forwards;
+      transition: transform 0.4s ease;
+    }
+
+    .country-card:hover {
+      transform: translateY(-10px) scale(1.05);
+    }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(50px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    .country-card img {
+      width: 220px;
+      height: 140px;
+      border-radius: 10px;
+      border: 3px solid #fff;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      transition: transform 0.3s ease, filter 0.3s ease;
+    }
+
+    .country-card:hover img {
+      transform: scale(1.08);
+      filter: brightness(1.15);
+    }
+
+    .country-card p {
+      font-size: 1.3rem;
+      font-weight: 700;
+      color: #fff;
+      margin-top: 12px;
+      padding: 6px 14px;
+      background: rgba(0,0,0,0.65);
+      border-radius: 8px;
+      display: inline-block;
+      transition: background 0.3s ease, color 0.3s ease;
+    }
+
+    .country-card:hover p {
+      background: rgba(0,0,0,0.85);
+      color: #ffeb3b;
+    }
+
+    /* Floating circles */
+    .circle {
+      position: absolute;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.15);
+      animation: float 12s infinite ease-in-out;
+      z-index: 0;
+    }
+
+    .circle:nth-child(1) { width: 100px; height: 100px; top: 20%; left: 10%; animation-delay: 0s; }
+    .circle:nth-child(2) { width: 150px; height: 150px; top: 60%; left: 80%; animation-delay: 2s; }
+    .circle:nth-child(3) { width: 80px; height: 80px; top: 40%; left: 50%; animation-delay: 4s; }
+    .circle:nth-child(4) { width: 120px; height: 120px; top: 10%; left: 70%; animation-delay: 6s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0) rotate(0deg); }
+      50% { transform: translateY(-40px) rotate(180deg); }
+    }
+
+    @media (max-width: 900px) {
+      .country-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+      .country-card img {
+        width: 170px;
+        height: 110px;
+      }
+    }
+
+    @media (max-width: 500px) {
+      .country-grid {
+        grid-template-columns: 1fr;
+      }
+      .country-card img {
+        width: 140px;
+        height: 95px;
+      }
+      .country-card p {
+        font-size: 1rem;
+      }
+      h1 {
+        font-size: 2.2rem;
+        padding: 8px 15px;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Floating circles -->
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+  <div class="circle"></div>
+
+  <h1>Select Your Country</h1>
+  
+  <div class="country-wrapper">
+    <div class="country-grid">
+      <a href="uk.html" class="country-card">
+        <img src="https://flagcdn.com/w320/gb.png" alt="United Kingdom">
+        <p>United Kingdom</p>
+      </a>
+      <a href="canada.html" class="country-card">
+        <img src="https://flagcdn.com/w320/ca.png" alt="Canada">
+        <p>Canada</p>
+      </a>
+      <a href="usa.html" class="country-card">
+        <img src="https://flagcdn.com/w320/us.png" alt="USA">
+        <p>United States of America</p>
+      </a>
+      <a href="australia.html" class="country-card">
+        <img src="https://flagcdn.com/w320/au.png" alt="Australia">
+        <p>Australia</p>
+      </a>
+      <a href="newzealand.html" class="country-card">
+        <img src="https://flagcdn.com/w320/nz.png" alt="New Zealand">
+        <p>New Zealand</p>
+      </a>
+      <a href="germany.html" class="country-card">
+        <img src="https://flagcdn.com/w320/de.png" alt="Germany">
+        <p>Germany</p>
+      </a>
+      <a href="ireland.html" class="country-card">
+        <img src="https://flagcdn.com/w320/ie.png" alt="Ireland">
+        <p>Ireland</p>
+      </a>
+      <a href="france.html" class="country-card">
+        <img src="https://flagcdn.com/w320/fr.png" alt="France">
+        <p>France</p>
+      </a>
+    </div>
+  </div>
+</body>
+</html>

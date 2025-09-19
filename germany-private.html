@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Private Universities in Germany</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: url('https://etimg.etb2bimg.com/photo/93896068.cms') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 40px 0 20px;
+      text-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+      position: relative;
+      z-index: 1;
+    }
+
+    .university-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      width: 100%;
+    }
+
+    .university-list {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+      z-index: 1;
+    }
+
+    .university-list a {
+      background: rgba(0,0,0,0.85);
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 10px;
+      font-size: 18px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    .university-list a:hover {
+      background: rgba(255,0,0,0.85);
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 30px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 20px;
+      z-index: 1;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-home:hover {
+      background: darkred;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 1000px) {
+      .university-list { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 650px) {
+      h1 { font-size: 40px; }
+      .university-list { grid-template-columns: 1fr; }
+      .university-list a { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Private Universities in Germany</h1>
+
+  <div class="university-container">
+    <div class="university-list">
+      <a href="https://www.bardberlin.org/" target="_blank">Bard College Berlin</a>
+      <a href="https://www.bsbi.de/" target="_blank">Berlin School of Business and Innovation (BSBI)</a>
+      <a href="https://www.bsp-campus.de/" target="_blank">BSP Business and Law School</a>
+      <a href="https://www.code.berlin/en/" target="_blank">CODE University of Applied Sciences (Berlin)</a>
+      <a href="https://www.constructor-university.com/" target="_blank">Constructor University Bremen</a>
+      <a href="https://www.ebs.edu/en" target="_blank">EBS University of Business and Law</a>
+      <a href="https://www.escpeurope.eu/campus/berlin" target="_blank">ESCP Business School (Berlin Campus)</a>
+      <a href="https://www.fom.de/en/" target="_blank">FOM University of Applied Sciences for Economics and Management</a>
+      <a href="https://www.frankfurt-school.de/home" target="_blank">Frankfurt School of Finance & Management</a>
+      <a href="https://www.gisma.com/" target="_blank">GISMA Business School</a>
+      <a href="https://www.hhl.de/en/" target="_blank">HHL Leipzig Graduate School of Management</a>
+      <a href="https://www.hertie-school.org/" target="_blank">Hertie School (Berlin)</a>
+      <a href="https://www.hs-fresenius.de/en/" target="_blank">Hochschule Fresenius – University of Applied Sciences</a>
+      <a href="https://www.iu.org/" target="_blank">IU International University of Applied Sciences</a>
+      <a href="https://www.the-klu.org/" target="_blank">Kühne Logistics University (KLU), Hamburg</a>
+      <a href="https://www.macromedia-fachhochschule.de/en/" target="_blank">Macromedia University of Applied Sciences</a>
+      <a href="https://www.munich-business-school.de/en/" target="_blank">Munich Business School</a>
+      <a href="https://www.quadriga.eu/en/" target="_blank">Quadriga University of Applied Sciences, Berlin</a>
+      <a href="https://www.srh-berlin.de/en/" target="_blank">SRH Berlin University of Applied Sciences</a>
+      <a href="https://www.srh-hochschule-heidelberg.de/en/" target="_blank">SRH Hochschule Heidelberg</a>
+      <a href="https://www.whu.edu/en/" target="_blank">WHU – Otto Beisheim School of Management</a>
+    </div>
+  </div>
+
+  <a href="germany.html" class="back-home">⬅ Back to Germany</a>
+</body>
+</html>

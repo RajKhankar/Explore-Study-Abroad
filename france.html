@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universities in France</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: url('https://a.travel-assets.com/findyours-php/viewfinder/images/res70/84000/84621-Paris.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top:0; left:0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3);
+      z-index: -1;
+      position: fixed;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 40px 0 20px;
+      text-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+      position: relative;
+      z-index: 1;
+    }
+
+    .university-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      width: 100%;
+    }
+
+    .university-list {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+      z-index: 1;
+    }
+
+    .university-list a {
+      background: rgba(0,0,0,0.85);
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 10px;
+      font-size: 18px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    .university-list a:hover {
+      background: rgba(255,0,0,0.85);
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 30px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 20px;
+      z-index: 1;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-home:hover {
+      background: darkred;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 1000px) {
+      .university-list { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 650px) {
+      h1 { font-size: 40px; }
+      .university-list { grid-template-columns: 1fr; }
+      .university-list a { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Universities in France</h1>
+
+  <div class="university-container">
+    <div class="university-list">
+      <a href="https://www.univ-amu.fr/" target="_blank">Aix-Marseille University</a>
+      <a href="https://www.ens-lyon.fr/" target="_blank">École Normale Supérieure de Lyon</a>
+      <a href="https://www.polytechnique.edu/en" target="_blank">École Polytechnique</a>
+      <a href="https://www.univ-grenoble-alpes.fr/" target="_blank">Grenoble Alpes University</a>
+      <a href="https://www.ip-paris.fr/en/" target="_blank">Institut Polytechnique de Paris</a>
+      <a href="https://www.univ-psl.fr/en" target="_blank">Paris Sciences et Lettres University (PSL)</a>
+      <a href="https://www.sciencespo.fr/en/" target="_blank">Sciences Po Paris</a>
+      <a href="https://www.sorbonne-universite.fr/en" target="_blank">Sorbonne University</a>
+      <a href="https://u-paris.fr/en/" target="_blank">Université Paris Cité</a>
+      <a href="https://www.universite-paris-saclay.fr/en" target="_blank">Université Paris-Saclay</a>
+      <a href="https://www.u-bordeaux.fr/en" target="_blank">University of Bordeaux</a>
+      <a href="https://www.univ-lille.fr/en/" target="_blank">University of Lille</a>
+      <a href="https://www.umontpellier.fr/en" target="_blank">University of Montpellier</a>
+      <a href="https://www.unistra.fr/en/" target="_blank">University of Strasbourg</a>
+      <a href="https://www.univ-toulouse.fr/en/" target="_blank">University of Toulouse</a>
+      <a href="https://www.pantheonsorbonne.fr/en/" target="_blank">Université Paris 1 Panthéon-Sorbonne</a>
+      <a href="https://www.univ-paris13.fr/" target="_blank">Université Paris 13</a>
+      <a href="https://www.univ-nantes.fr/en/" target="_blank">University of Nantes</a>
+      <a href="https://www.univ-rouen.fr/en/" target="_blank">University of Rouen Normandie</a>
+      <a href="https://www.universite-versailles.fr/en" target="_blank">University of Versailles</a>
+      <a href="https://www.univ-lyon1.fr/en/" target="_blank">University of Lyon (Claude Bernard Lyon 1)</a>
+      <a href="https://www.univ-poitiers.fr/en/" target="_blank">University of Poitiers</a>
+      <a href="https://www.univ-grenoble-alpes.fr/en" target="_blank">University of Grenoble Alpes</a>
+      <a href="https://www.univ-clermont.fr/en/" target="_blank">University of Clermont Auvergne</a>
+      <a href="https://www.univ-rennes1.fr/en/" target="_blank">University of Rennes 1</a>
+      <a href="https://www.univ-lorraine.fr/en/" target="_blank">University of Lorraine</a>
+      <a href="https://u-paris.fr/en/" target="_blank">Université de Paris</a>
+      <a href="https://www.unilim.fr/en/" target="_blank">University of Limoges</a>
+      <a href="https://www.unicaen.fr/en/" target="_blank">University of Caen Normandy</a>
+      <a href="https://www.univ-orleans.fr/en/" target="_blank">University of Orléans</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-home">⬅ Back to Home</a>
+</body>
+</html>

@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universities in Ireland</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: url('https://images.travelandleisureasia.com/wp-content/uploads/sites/3/2024/03/07144447/Ireland-cliff.jpg?tr=w-1200,q-60') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top:0; left:0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.3); /* slightly dark overlay for readability */
+      z-index: -1;
+      position: fixed;
+    }
+
+    h1 {
+      font-size: 60px;
+      margin: 40px 0 20px;
+      text-shadow: 3px 3px 12px rgba(0,0,0,0.5);
+      position: relative;
+      z-index: 1;
+    }
+
+    .university-container {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      flex: 1;
+      width: 100%;
+    }
+
+    .university-list {
+      max-width: 1200px;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      padding: 0 20px;
+      z-index: 1;
+    }
+
+    .university-list a {
+      background: rgba(0,0,0,0.85);
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 10px;
+      font-size: 18px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, background 0.3s ease, box-shadow 0.3s ease;
+      display: block;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      text-align: center;
+    }
+
+    .university-list a:hover {
+      background: rgba(255,0,0,0.85);
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      left: 50%;
+      transform: translateX(-50%);
+      padding: 12px 30px;
+      background: red;
+      color: white;
+      text-decoration: none;
+      border-radius: 12px;
+      font-size: 20px;
+      z-index: 1;
+      transition: background 0.3s ease, transform 0.3s ease;
+    }
+
+    .back-home:hover {
+      background: darkred;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 1000px) {
+      .university-list { grid-template-columns: repeat(2, 1fr); }
+    }
+
+    @media (max-width: 650px) {
+      h1 { font-size: 40px; }
+      .university-list { grid-template-columns: 1fr; }
+      .university-list a { font-size: 16px; }
+    }
+  </style>
+</head>
+<body>
+  <h1>Universities in Ireland</h1>
+
+  <div class="university-container">
+    <div class="university-list">
+      <a href="https://www.atu.ie/" target="_blank">Atlantic Technological University (ATU)</a>
+      <a href="https://www.dcu.ie/" target="_blank">Dublin City University (DCU)</a>
+      <a href="https://www.dias.ie/" target="_blank">Dublin Institute for Advanced Studies (DIAS)</a>
+      <a href="https://www.maynoothuniversity.ie/" target="_blank">Maynooth University</a>
+      <a href="https://www.mtu.ie/" target="_blank">Munster Technological University (MTU)</a>
+      <a href="https://www.ncad.ie/" target="_blank">National College of Art and Design (NCAD)</a>
+      <a href="https://www.rcsi.com/" target="_blank">Royal College of Surgeons in Ireland (RCSI)</a>
+      <a href="https://www.setu.ie/" target="_blank">South East Technological University (SETU)</a>
+      <a href="https://www.tudublin.ie/" target="_blank">Technological University Dublin (TU Dublin)</a>
+      <a href="https://www.tus.ie/" target="_blank">Technological University of the Shannon (TUS)</a>
+      <a href="https://www.tcd.ie/" target="_blank">Trinity College Dublin (TCD)</a>
+      <a href="https://www.ucc.ie/" target="_blank">University College Cork (UCC)</a>
+      <a href="https://www.ucd.ie/" target="_blank">University College Dublin (UCD)</a>
+      <a href="https://www.universityofgalway.ie/" target="_blank">University of Galway</a>
+      <a href="https://www.ul.ie/" target="_blank">University of Limerick (UL)</a>
+    </div>
+  </div>
+
+  <a href="index.html" class="back-home">⬅ Back to Home</a>
+</body>
+</html>

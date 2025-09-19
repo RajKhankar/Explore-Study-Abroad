@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Australian Universities</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background: url("https://assets-news.housing.com/news/wp-content/uploads/2022/09/23094604/Places-to-visit-in-Australia.jpg") no-repeat center center/cover;
+      margin: 0;
+      padding: 0;
+      color: white;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 20px 0;
+      font-size: 40px;
+      color: white;
+      text-shadow: 2px 2px 6px rgba(0, 0, 0, 0.7); /* subtle glow instead of black box */
+    }
+
+    .university-list {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 20px;
+      padding: 40px;
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .university-list a {
+      display: block;
+      padding: 15px;
+      background: rgba(0, 0, 0, 0.75); /* darker black for better visibility */
+      border-radius: 12px;
+      color: white;
+      font-size: 18px;
+      text-decoration: none;
+      transition: transform 0.3s ease, background 0.3s ease;
+    }
+
+    .university-list a:hover {
+      transform: scale(1.08);
+      background: rgba(214, 40, 40, 0.85);
+    }
+
+    /* Back button fixed bottom-left */
+    .back-link {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      background: #d62828;
+      padding: 12px 30px;
+      border-radius: 12px;
+      transition: background 0.3s ease, transform 0.3s ease;
+      z-index: 10;
+    }
+
+    .back-link:hover {
+      background: #9b2226;
+      transform: scale(1.05);
+    }
+  </style>
+</head>
+<body>
+  <h1>Australian Universities</h1>
+
+  <div class="university-list">
+    <a href="https://www.acu.edu.au/" target="_blank">Australian Catholic University (ACU)</a>
+    <a href="https://www.anu.edu.au/" target="_blank">Australian National University (ANU)</a>
+    <a href="https://bond.edu.au/" target="_blank">Bond University</a>
+    <a href="https://www.cdu.edu.au/" target="_blank">Charles Darwin University (CDU)</a>
+    <a href="https://www.csu.edu.au/" target="_blank">Charles Sturt University</a>
+    <a href="https://www.cqu.edu.au/" target="_blank">Central Queensland University (CQU)</a>
+    <a href="https://www.curtin.edu.au/" target="_blank">Curtin University</a>
+    <a href="https://www.deakin.edu.au/" target="_blank">Deakin University</a>
+    <a href="https://www.ecu.edu.au/" target="_blank">Edith Cowan University (ECU)</a>
+    <a href="https://federation.edu.au/" target="_blank">Federation University Australia</a>
+    <a href="https://www.flinders.edu.au/" target="_blank">Flinders University</a>
+    <a href="https://www.griffith.edu.au/" target="_blank">Griffith University</a>
+    <a href="https://www.jcu.edu.au/" target="_blank">James Cook University (JCU)</a>
+    <a href="https://www.latrobe.edu.au/" target="_blank">La Trobe University</a>
+    <a href="https://www.mq.edu.au/" target="_blank">Macquarie University</a>
+    <a href="https://www.monash.edu/" target="_blank">Monash University</a>
+    <a href="https://www.murdoch.edu.au/" target="_blank">Murdoch University</a>
+    <a href="https://www.qut.edu.au/" target="_blank">Queensland University of Technology (QUT)</a>
+    <a href="https://www.rmit.edu.au/" target="_blank">RMIT University</a>
+    <a href="https://www.scu.edu.au/" target="_blank">Southern Cross University</a>
+    <a href="https://www.swinburne.edu.au/" target="_blank">Swinburne University of Technology</a>
+    <a href="https://www.torrens.edu.au/" target="_blank">Torrens University Australia</a>
+    <a href="https://www.adelaide.edu.au/" target="_blank">University of Adelaide</a>
+    <a href="https://www.canberra.edu.au/" target="_blank">University of Canberra</a>
+    <a href="https://divinity.edu.au/" target="_blank">University of Divinity</a>
+    <a href="https://www.unimelb.edu.au/" target="_blank">University of Melbourne</a>
+    <a href="https://www.une.edu.au/" target="_blank">University of New England (UNE)</a>
+    <a href="https://www.unsw.edu.au/" target="_blank">University of New South Wales (UNSW Sydney)</a>
+    <a href="https://www.newcastle.edu.au/" target="_blank">University of Newcastle (UON)</a>
+    <a href="https://www.notredame.edu.au/" target="_blank">University of Notre Dame Australia</a>
+    <a href="https://www.uq.edu.au/" target="_blank">University of Queensland (UQ)</a>
+    <a href="https://www.unisa.edu.au/" target="_blank">University of South Australia (UniSA)</a>
+    <a href="https://www.unisq.edu.au/" target="_blank">University of Southern Queensland (UniSQ)</a>
+    <a href="https://www.sydney.edu.au/" target="_blank">University of Sydney (USYD)</a>
+    <a href="https://www.utas.edu.au/" target="_blank">University of Tasmania (UTAS)</a>
+    <a href="https://www.uts.edu.au/" target="_blank">University of Technology Sydney (UTS)</a>
+    <a href="https://www.usc.edu.au/" target="_blank">University of the Sunshine Coast (UniSC)</a>
+    <a href="https://www.uwa.edu.au/" target="_blank">University of Western Australia (UWA)</a>
+    <a href="https://www.uow.edu.au/" target="_blank">University of Wollongong (UOW)</a>
+    <a href="https://www.vu.edu.au/" target="_blank">Victoria University</a>
+    <a href="https://www.westernsydney.edu.au/" target="_blank">Western Sydney University (WSU)</a>
+  </div>
+
+  <!-- Back Button -->
+  <a href="index.html" class="back-link">← Back</a>
+
+</body>
+</html>

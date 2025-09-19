@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Explore UK Universities</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://www.jobberman.com.gh/discover/wp-content/uploads/2025/01/stying-abroad-uk-ghana.jpg') no-repeat center center/cover;
+      color: white;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin-bottom: 50px;
+      background: rgba(0, 0, 0, 0.6);
+      padding: 15px 30px;
+      border-radius: 12px;
+    }
+
+    .card-container {
+      display: flex;
+      gap: 40px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .card {
+      background: rgba(0, 0, 0, 0.7);
+      padding: 40px;
+      border-radius: 20px;
+      text-align: center;
+      font-size: 1.5rem;
+      font-weight: bold;
+      color: #fff;
+      width: 250px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .card:hover {
+      transform: scale(1.1);
+      background: rgba(255, 0, 0, 0.8);
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: red;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .back-home:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Explore UK Universities</h1>
+
+  <div class="card-container">
+    <a href="uk-top10.html">
+      <div class="card">🏆 Top 10 UK Universities</div>
+    </a>
+    <a href="uk-russell.html">
+      <div class="card">🎓 Russell Group Universities</div>
+    </a>
+    <a href="uk-all.html">
+      <div class="card">📚 All Universities</div>
+    </a>
+  </div>
+
+  <a href="index.html" class="back-home">⬅ Back to Home</a>
+
+</body>
+</html>

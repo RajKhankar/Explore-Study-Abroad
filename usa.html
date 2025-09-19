@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Universities in USA</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: url('https://acko-cms.ackoassets.com/places_to_visit_in_usa_4997abe652.png') no-repeat center center fixed;
+      background-size: cover;
+      color: #fff;
+      min-height: 100vh;
+    }
+
+    body::before {
+      content: "";
+      position: absolute;
+      top:0; left:0;
+      width: 100%;
+      height: 100%;
+      background: rgba(0,0,0,0.6); /* dark overlay for readability */
+      z-index: -1;
+      position: fixed;
+    }
+
+    h1 {
+      font-size: 70px;
+      margin: 40px 0;
+      text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
+    }
+
+    .university-list {
+      max-width: 1200px;
+      margin: 0 auto 80px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      gap: 15px;
+      padding: 0 20px;
+    }
+
+    .university-list a {
+      background: rgba(0,0,0,0.7);
+      color: #fff;
+      text-decoration: none;
+      padding: 15px 20px;
+      font-size: 20px;
+      border-radius: 12px;
+      transition: transform 0.3s ease, background 0.3s ease;
+      display: block;
+      box-shadow: 0 6px 15px rgba(0,0,0,0.4);
+      text-align: left;
+    }
+
+    .university-list a:hover {
+      background: rgba(255, 0, 0, 0.8);
+      transform: scale(1.03);
+      box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+    }
+
+    .back-link {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      background: #d62828;
+      padding: 12px 30px;
+      border-radius: 12px;
+      transition: background 0.3s ease, transform 0.3s ease;
+      z-index: 10;
+    }
+
+    .back-link:hover {
+      background: #9b2226;
+      transform: scale(1.05);
+    }
+
+    @media (max-width: 500px) {
+      h1 {
+        font-size: 50px;
+      }
+      .university-list {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <h1>Universities in USA</h1>
+
+  <div class="university-list">
+    <a href="https://www.brown.edu/" target="_blank">Brown University</a>
+    <a href="https://www.columbia.edu/" target="_blank">Columbia University</a>
+    <a href="https://www.cornell.edu/" target="_blank">Cornell University</a>
+    <a href="https://home.dartmouth.edu/" target="_blank">Dartmouth College</a>
+    <a href="https://www.harvard.edu/" target="_blank">Harvard University</a>
+    <a href="https://www.princeton.edu/" target="_blank">Princeton University</a>
+    <a href="https://www.upenn.edu/" target="_blank">University of Pennsylvania (UPenn)</a>
+    <a href="https://www.yale.edu/" target="_blank">Yale University</a>
+    <a href="https://www.mit.edu/" target="_blank">Massachusetts Institute of Technology (MIT)</a>
+    <a href="https://www.stanford.edu/" target="_blank">Stanford University</a>
+    <a href="https://www.caltech.edu/" target="_blank">California Institute of Technology (Caltech)</a>
+    <a href="https://www.uchicago.edu/" target="_blank">University of Chicago</a>
+    <a href="https://www.duke.edu/" target="_blank">Duke University</a>
+    <a href="https://www.northwestern.edu/" target="_blank">Northwestern University</a>
+    <a href="https://www.jhu.edu/" target="_blank">Johns Hopkins University</a>
+    <a href="https://www.asu.edu/" target="_blank">Arizona State University (ASU)</a>
+    <a href="https://www.cmu.edu/" target="_blank">Carnegie Mellon University (CMU)</a>
+    <a href="https://www.gatech.edu/" target="_blank">Georgia Institute of Technology</a>
+    <a href="https://www.indiana.edu/" target="_blank">Indiana University Bloomington</a>
+    <a href="https://msu.edu/" target="_blank">Michigan State University</a>
+    <a href="https://www.ncsu.edu/" target="_blank">North Carolina State University</a>
+    <a href="https://www.osu.edu/" target="_blank">Ohio State University</a>
+    <a href="https://www.psu.edu/" target="_blank">Pennsylvania State University</a>
+    <a href="https://www.purdue.edu/" target="_blank">Purdue University</a>
+    <a href="https://www.tamu.edu/" target="_blank">Texas A&M University</a>
+    <a href="https://www.berkeley.edu/" target="_blank">University of California, Berkeley</a>
+    <a href="https://www.ucdavis.edu/" target="_blank">University of California, Davis</a>
+    <a href="https://www.ucla.edu/" target="_blank">University of California, Los Angeles (UCLA)</a>
+    <a href="https://ucsd.edu/" target="_blank">University of California, San Diego (UCSD)</a>
+    <a href="https://www.ufl.edu/" target="_blank">University of Florida (UF)</a>
+    <a href="https://illinois.edu/" target="_blank">University of Illinois Urbana–Champaign (UIUC)</a>
+    <a href="https://umd.edu/" target="_blank">University of Maryland, College Park (UMD)</a>
+    <a href="https://umich.edu/" target="_blank">University of Michigan, Ann Arbor</a>
+    <a href="https://twin-cities.umn.edu/" target="_blank">University of Minnesota, Twin Cities</a>
+    <a href="https://www.usc.edu/" target="_blank">University of Southern California (USC)</a>
+    <a href="https://www.uta.edu/" target="_blank">University of Texas at Arlington (UTA)</a>
+    <a href="https://www.utexas.edu/" target="_blank">University of Texas at Austin (UT Austin)</a>
+    <a href="https://www.washington.edu/" target="_blank">University of Washington, Seattle</a>
+    <a href="https://www.wisc.edu/" target="_blank">University of Wisconsin–Madison</a>
+    <a href="https://vt.edu/" target="_blank">Virginia Tech</a>
+    <a href="https://www.bu.edu/" target="_blank">Boston University (BU)</a>
+    <a href="https://www.gwu.edu/" target="_blank">George Washington University (GWU)</a>
+    <a href="https://www.nyu.edu/" target="_blank">New York University (NYU)</a>
+    <a href="https://www.northeastern.edu/" target="_blank">Northeastern University</a>
+    <a href="https://www.rutgers.edu/" target="_blank">Rutgers University–New Brunswick</a>
+    <a href="https://www.stonybrook.edu/" target="_blank">Stony Brook University (SUNY)</a>
+    <a href="https://www.buffalo.edu/" target="_blank">University at Buffalo (SUNY)</a>
+    <a href="https://uci.edu/" target="_blank">University of California, Irvine</a>
+    <a href="https://www.ucr.edu/" target="_blank">University of California, Riverside</a>
+    <a href="https://www.ucsb.edu/" target="_blank">University of California, Santa Barbara (UCSB)</a>
+    <a href="https://uconn.edu/" target="_blank">University of Connecticut (UConn)</a>
+    <a href="https://www.udel.edu/" target="_blank">University of Delaware</a>
+    <a href="https://www.uh.edu/" target="_blank">University of Houston</a>
+    <a href="https://www.umass.edu/" target="_blank">University of Massachusetts Amherst (UMass Amherst)</a>
+    <a href="https://www.unc.edu/" target="_blank">University of North Carolina at Chapel Hill (UNC)</a>
+    <a href="https://www.pitt.edu/" target="_blank">University of Pittsburgh</a>
+    <a href="https://www.virginia.edu/" target="_blank">University of Virginia (UVA)</a>
+    <a href="https://www.vanderbilt.edu/" target="_blank">Vanderbilt University</a>
+  </div>
+
+  <!-- Fixed Back Button -->
+  <a href="index.html" class="back-link">← Back</a>
+
+</body>
+</html>

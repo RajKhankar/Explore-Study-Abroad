@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Universities in UK</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: url('https://dynamic-media-cdn.tripadvisor.com/media/photo-o/14/10/2f/fe/united-kingdom.jpg') no-repeat center center fixed;
+      background-size: cover;
+      color: white;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+
+    h1 {
+      font-size: 3rem;
+      margin: 30px 0;
+      background: rgba(0, 0, 0, 0.8);
+      padding: 15px 40px;
+      border-radius: 12px;
+      text-align: center;
+    }
+
+    .university-list {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      width: 90%;
+      max-width: 1400px;
+      margin-bottom: 50px;
+    }
+
+    .university {
+      background: rgba(0, 0, 0, 0.9); /* darker background */
+      padding: 15px 20px;
+      border-radius: 10px;
+      text-align: center;
+      font-size: 1.1rem;
+      font-weight: bold;
+      transition: transform 0.3s ease, background 0.3s ease;
+      cursor: pointer;
+    }
+
+    .university:hover {
+      transform: scale(1.05);
+      background: rgba(255, 0, 0, 0.85);
+    }
+
+    a {
+      text-decoration: none;
+      color: white;
+    }
+
+    .back-home {
+      position: fixed;
+      bottom: 20px;
+      left: 20px;
+      background: red;
+      padding: 12px 20px;
+      border-radius: 8px;
+      font-size: 1rem;
+      font-weight: bold;
+      color: white;
+      text-decoration: none;
+      transition: background 0.3s ease;
+    }
+
+    .back-home:hover {
+      background: darkred;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>All Universities in UK</h1>
+
+  <div class="university-list">
+    <div class="university">Abertay University</div>
+    <div class="university">Aberystwyth University</div>
+    <div class="university">Anglia Ruskin University</div>
+    <div class="university">Arts University Bournemouth</div>
+    <div class="university">Aston University</div>
+    <div class="university">Bangor University</div>
+    <div class="university">Bath Spa University</div>
+    <div class="university">Birkbeck, University of London</div>
+    <div class="university">Birmingham City University</div>
+    <div class="university">Bishop Grosseteste University</div>
+    <div class="university">Bournemouth University</div>
+    <div class="university">BPP University</div>
+    <div class="university">Brunel University London</div>
+    <div class="university">Buckinghamshire New University</div>
+    <div class="university">Canterbury Christ Church University</div>
+    <div class="university">Cardiff Metropolitan University</div>
+    <div class="university">Cardiff University</div>
+    <div class="university">City, University of London</div>
+    <div class="university">Coventry University</div>
+    <div class="university">Cranfield University</div>
+    <div class="university">De Montfort University</div>
+    <div class="university">Durham University</div>
+    <div class="university">Edge Hill University</div>
+    <div class="university">Edinburgh Napier University</div>
+    <div class="university">Falmouth University</div>
+    <div class="university">Glasgow Caledonian University</div>
+    <div class="university">Goldsmiths, University of London</div>
+    <div class="university">Guildhall School of Music and Drama</div>
+    <div class="university">Harper Adams University</div>
+    <div class="university">Hartpury University and Hartpury College</div>
+    <div class="university">Heriot-Watt University</div>
+    <div class="university">Imperial College London</div>
+    <div class="university">Keele University</div>
+    <div class="university">King's College London</div>
+    <div class="university">Kingston University</div>
+    <div class="university">Lancaster University</div>
+    <div class="university">Leeds Arts University</div>
+    <div class="university">Leeds Beckett University</div>
+    <div class="university">Leeds Conservatoire</div>
+    <div class="university">Leeds Trinity University</div>
+    <div class="university">Liverpool Hope University</div>
+    <div class="university">Liverpool Institute for Performing Arts</div>
+    <div class="university">Liverpool John Moores University</div>
+    <div class="university">Liverpool School of Tropical Medicine</div>
+    <div class="university">London Business School</div>
+    <div class="university">London Metropolitan University</div>
+    <div class="university">London School of Hygiene and Tropical Medicine, University of London</div>
+    <div class="university">London South Bank University</div>
+    <div class="university">Loughborough University</div>
+    <div class="university">Manchester Metropolitan University</div>
+    <div class="university">Middlesex University</div>
+    <div class="university">Newcastle University</div>
+    <div class="university">Newman University, Birmingham</div>
+    <div class="university">Northern School of Contemporary Dance</div>
+    <div class="university">Northumbria University</div>
+    <div class="university">Norwich University of the Arts</div>
+    <div class="university">Nottingham Trent University</div>
+    <div class="university">Oxford Brookes University</div>
+    <div class="university">Plymouth College of Art</div>
+    <div class="university">Plymouth Marjon University</div>
+    <div class="university">Queen Margaret University</div>
+    <div class="university">Queen Mary University of London</div>
+    <div class="university">Queen's University Belfast</div>
+    <div class="university">Ravensbourne University London</div>
+    <div class="university">Regent's University London</div>
+    <div class="university">Richmond, The American International University in London</div>
+    <div class="university">Robert Gordon University</div>
+    <div class="university">Rose Bruford College</div>
+    <div class="university">Royal Agricultural University</div>
+    <div class="university">Royal College of Art</div>
+    <div class="university">Royal College of Music</div>
+    <div class="university">Royal Holloway, University of London</div>
+    <div class="university">Royal Veterinary College University of London</div>
+    <div class="university">School of Advanced Study, University of London</div>
+    <div class="university">Sheffield Hallam University</div>
+    <div class="university">SOAS, University of London</div>
+    <div class="university">Solent University</div>
+    <div class="university">St George's, University of London</div>
+    <div class="university">St Mary's University, Twickenham</div>
+    <div class="university">Staffordshire University</div>
+    <div class="university">Swansea University</div>
+    <div class="university">Teesside University</div>
+    <div class="university">The Courtauld Institute of Art, University of London</div>
+    <div class="university">The Glasgow School of Art</div>
+    <div class="university">The London Institute of Banking and Finance</div>
+    <div class="university">The London School of Economics and Political Science</div>
+    <div class="university">The Royal Central School of Speech and Drama</div>
+    <div class="university">The University of Buckingham</div>
+    <div class="university">The University of Edinburgh</div>
+    <div class="university">The University of Hull</div>
+    <div class="university">The University of Law</div>
+    <div class="university">The University of Manchester</div>
+    <div class="university">The University of Northampton</div>
+    <div class="university">The University of Nottingham</div>
+    <div class="university">The University of Sheffield</div>
+    <div class="university">The University of Warwick</div>
+    <div class="university">The University of Winchester</div>
+    <div class="university">The University of York</div>
+    <div class="university">Trinity Laban Conservatoire of Music and Dance</div>
+    <div class="university">Ulster University</div>
+    <div class="university">University College Birmingham</div>
+    <div class="university">University College London</div>
+    <div class="university">University for the Creative Arts</div>
+    <div class="university">University of Aberdeen</div>
+    <div class="university">University of Bath</div>
+    <div class="university">University of Bedfordshire</div>
+    <div class="university">University of Birmingham</div>
+    <div class="university">University of Bolton</div>
+    <div class="university">University of Bradford</div>
+    <div class="university">University of Brighton</div>
+    <div class="university">University of Bristol</div>
+    <div class="university">University of Cambridge</div>
+    <div class="university">University of Central Lancashire</div>
+    <div class="university">University of Chester</div>
+    <div class="university">University of Chichester</div>
+    <div class="university">University of Cumbria</div>
+    <div class="university">University of Derby</div>
+    <div class="university">University of Dundee</div>
+    <div class="university">University of East Anglia</div>
+    <div class="university">University of East London</div>
+    <div class="university">University of Essex</div>
+    <div class="university">University of Exeter</div>
+    <div class="university">University of Glasgow</div>
+    <div class="university">University of Gloucestershire</div>
+    <div class="university">University of Greenwich</div>
+    <div class="university">University of Hertfordshire</div>
+    <div class="university">University of Huddersfield</div>
+    <div class="university">University of Kent</div>
+    <div class="university">University of Leeds</div>
+    <div class="university">University of Leicester</div>
+    <div class="university">University of Lincoln</div>
+    <div class="university">University of Liverpool</div>
+    <div class="university">University of Oxford</div>
+    <div class="university">University of Plymouth</div>
+    <div class="university">University of Portsmouth</div>
+    <div class="university">University of Reading</div>
+    <div class="university">University of Roehampton</div>
+    <div class="university">University of Salford</div>
+    <div class="university">University of South Wales</div>
+    <div class="university">University of Southampton</div>
+    <div class="university">University of St Andrews</div>
+    <div class="university">University of Stirling</div>
+    <div class="university">University of Strathclyde</div>
+    <div class="university">University of Suffolk</div>
+    <div class="university">University of Sunderland</div>
+    <div class="university">University of Surrey</div>
+    <div class="university">University of Sussex</div>
+    <div class="university">University of the Arts London</div>
+    <div class="university">University of the Highlands and Islands</div>
+    <div class="university">University of the West of England</div>
+    <div class="university">University of the West of Scotland</div>
+    <div class="university">University of Wales Trinity Saint David</div>
+    <div class="university">University of West London</div>
+    <div class="university">University of Westminster</div>
+    <div class="university">University of Wolverhampton</div>
+    <div class="university">University of Worcester</div>
+    <div class="university">Wrexham Glyndwr University</div>
+    <div class="university">Writtle University College</div>
+    <div class="university">York St John University</div>
+  </div>
+
+  <a href="uk.html" class="back-home">⬅ Back to UK</a>
+
+</body>
+</html>

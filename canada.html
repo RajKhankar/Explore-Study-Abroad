@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Please Select - Canada</title>
+  <style>
+    body {
+      font-family: 'Times New Roman', serif;
+      margin: 0;
+      padding: 0;
+      text-align: center;
+      background: url('https://cdn.britannica.com/35/100235-050-CE3936EE/view-CN-Tower-Toronto-skyline-observation-deck.jpg') no-repeat center center fixed;
+      background-size: cover;
+      height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-items: center;
+      color: #fff;
+    }
+
+    h1 {
+      font-size: 80px; /* increased */
+      margin: 30px 0 20px;
+      text-shadow: 3px 3px 12px rgba(0,0,0,0.8);
+      animation: fadeInDown 1.5s ease;
+    }
+
+    .options {
+      display: flex;
+      justify-content: center;
+      gap: 50px;
+      flex-wrap: wrap;
+      margin-top: 80px; /* push cards down */
+      align-items: center;
+      flex: 1; /* fill remaining space to center vertically */
+    }
+
+    .option-card {
+      background: rgba(0, 0, 0, 0.6); /* black background behind card only */
+      padding: 25px;
+      border-radius: 20px;
+      width: 320px;
+      height: 240px;
+      text-decoration: none;
+      color: #fff;
+      font-size: 28px;
+      font-weight: bold;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 8px 20px rgba(0,0,0,0.5);
+      transition: transform 0.4s ease, box-shadow 0.4s ease;
+      animation: zoomIn 1.2s ease;
+      text-shadow: 2px 2px 6px rgba(0,0,0,0.7);
+    }
+
+    .option-card img {
+      width: 90px;
+      height: 90px;
+      margin-bottom: 15px;
+      animation: bounce 2s infinite;
+    }
+
+    .option-card:hover {
+      transform: translateY(-15px) scale(1.05);
+      box-shadow: 0 15px 30px rgba(0,0,0,0.6);
+    }
+
+    .back-link {
+      display: inline-block;
+      margin-top: 30px;
+      font-size: 20px;
+      text-decoration: none;
+      color: white;
+      background: #d62828;
+      padding: 12px 30px;
+      border-radius: 12px;
+      position: relative;
+      z-index: 1;
+      transition: background 0.3s ease, transform 0.3s ease;
+      animation: fadeInUp 1.5s ease;
+    }
+    .back-link:hover {
+      background: #9b2226;
+      transform: scale(1.05);
+    }
+
+    /* Animations */
+    @keyframes fadeInDown {
+      from { opacity: 0; transform: translateY(-50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes fadeInUp {
+      from { opacity: 0; transform: translateY(50px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+    @keyframes zoomIn {
+      from { opacity: 0; transform: scale(0.8); }
+      to { opacity: 1; transform: scale(1); }
+    }
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+  </style>
+</head>
+<body>
+  <h1>Explore Canada</h1>
+
+  <div class="options">
+    <a href="canada-universities.html" class="option-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135810.png" alt="Universities">
+      List of Universities
+    </a>
+    <a href="canada-colleges.html" class="option-card">
+      <img src="https://cdn-icons-png.flaticon.com/512/3135/3135755.png" alt="Colleges">
+      List of Colleges
+    </a>
+  </div>
+
+  <a href="index.html" class="back-link">← Back to Home</a>
+</body>
+</html>
